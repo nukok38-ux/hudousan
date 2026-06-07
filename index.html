@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>みらい住まい不動産｜はじめての家探しも住み替えも安心して進められる</title>
+<meta name="description" content="横浜市・川崎市・鎌倉市で、はじめての家探しや住み替えを相談できる地域密着の不動産会社です。住宅ローン、資金計画、物件探しまで一緒に進めます。">
+<style>
+:root{
+  --navy:#163A5F;
+  --navy-dark:#09284B;
+  --gold:#C8A96A;
+  --bg:#F7F8FA;
+  --soft:#EEF5FA;
+  --text:#333333;
+  --muted:#666666;
+  --white:#FFFFFF;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:-apple-system,BlinkMacSystemFont,"Hiragino Kaku Gothic ProN","Yu Gothic",Meiryo,sans-serif;color:var(--text);line-height:1.8;background:var(--white)}
+img{max-width:100%;display:block}
+a{text-decoration:none;color:inherit}
+.header{height:90px;background:#fff;position:sticky;top:0;z-index:20;box-shadow:0 8px 24px rgba(0,0,0,.05)}
+.header-inner{max-width:1200px;margin:0 auto;height:100%;display:flex;align-items:center;justify-content:space-between;padding:0 28px}
+.logo{display:flex;align-items:center;gap:14px;font-weight:800;color:var(--navy);font-size:20px}
+.logo img{width:190px;height:auto}
+.nav{display:flex;align-items:center;gap:26px;font-size:14px;color:var(--navy);font-weight:700}
+.header-actions{display:flex;align-items:center;gap:18px}
+.tel{color:var(--navy);font-weight:900;line-height:1.25}.tel small{display:block;font-size:11px;color:var(--muted);font-weight:600}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 32px;border-radius:999px;background:var(--navy);color:#fff;font-weight:800;box-shadow:0 14px 26px rgba(9,40,75,.18);transition:.25s ease}
+.btn:hover{transform:scale(1.02)}
+.btn.gold{background:var(--gold);color:#fff}
+.btn.light{background:#fff;color:var(--navy);border:1px solid rgba(22,58,95,.18);box-shadow:none}
+.section{position:relative;padding:100px 28px;overflow:hidden}
+.container{max-width:1120px;margin:0 auto;position:relative;z-index:2}
+.kicker{color:var(--gold);font-weight:900;letter-spacing:.12em;font-size:13px;margin-bottom:10px}
+h1,h2,h3,p{margin-top:0}
+h1{font-size:58px;line-height:1.28;color:var(--navy);letter-spacing:.02em;margin-bottom:24px}
+h2{font-size:38px;line-height:1.4;color:var(--navy);text-align:center;margin-bottom:44px}
+h3{font-size:23px;line-height:1.5;color:var(--navy);margin-bottom:10px}
+.lead{font-size:18px;font-weight:700;margin-bottom:34px}
+.hero{width:100%;min-height:760px;background:linear-gradient(90deg,#fff 0%,#fff 38%,#eef7fc 72%,#fff 100%);position:relative;overflow:hidden}
+.hero:before{content:"";position:absolute;left:-160px;top:85px;width:520px;height:520px;border-radius:50%;background:rgba(204,225,239,.65);z-index:0}
+.hero:after{content:"";position:absolute;right:-220px;bottom:-220px;width:520px;height:520px;border-radius:50%;border:1px solid rgba(200,169,106,.45);z-index:0}
+.hero-inner{max-width:1360px;margin:0 auto;min-height:760px;display:grid;grid-template-columns:45% 55%;align-items:center;position:relative;z-index:2}
+.hero-text{padding:70px 32px 70px 76px}
+.hero-visual{height:760px;position:relative;overflow:hidden;border-bottom-left-radius:80px}
+.hero-visual img{width:100%;height:100%;object-fit:cover}
+.hero-visual:before{content:"";position:absolute;inset:0;background:linear-gradient(90deg,rgba(255,255,255,.95),rgba(255,255,255,.5) 28%,rgba(255,255,255,0) 58%);z-index:1}
+.hero-points{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin:28px 0 30px;max-width:610px}
+.point{background:rgba(255,255,255,.82);backdrop-filter:blur(5px);border:1px solid rgba(22,58,95,.1);border-radius:22px;padding:15px;text-align:center;color:var(--navy);font-weight:800;font-size:14px}
+.point small{display:block;color:var(--muted);font-weight:700;font-size:12px}
+.deco{position:absolute;z-index:-1;pointer-events:none;mix-blend-mode:multiply;opacity:.68}
+.fadeUp{animation:fadeUp .8s ease both}
+@keyframes fadeUp{from{opacity:0;transform:translateY(18px)}to{opacity:1;transform:none}}
+@keyframes float{0%,100%{transform:translateY(0)}50%{transform:translateY(-14px)}}
+.float{animation:float 12s ease-in-out infinite}
+.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.card{background:#fff;border-radius:24px;padding:34px;box-shadow:0 16px 34px rgba(22,58,95,.08);border:1px solid rgba(22,58,95,.06)}
+.card.center{text-align:center}
+.card-icon{width:74px;height:74px;margin:0 auto 18px;border-radius:50%;background:var(--soft);display:flex;align-items:center;justify-content:center;color:var(--navy);font-size:30px;font-weight:900}
+.soft{background:var(--bg)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center}
+.panel{background:#fff;border-radius:28px;padding:34px;box-shadow:0 16px 34px rgba(22,58,95,.08)}
+.check{list-style:none;padding:0;margin:0}.check li{padding:10px 0 10px 34px;position:relative}.check li:before{content:"";position:absolute;left:0;top:19px;width:16px;height:16px;border-radius:50%;background:var(--gold)}
+.beforeafter{display:grid;grid-template-columns:1fr 64px 1fr;gap:18px;align-items:center}
+.arrow{font-size:40px;color:var(--gold);text-align:center}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.stat{background:#fff;border:1px solid rgba(200,169,106,.35);border-radius:24px;padding:28px;text-align:center;box-shadow:0 12px 24px rgba(22,58,95,.06)}
+.stat img{border-radius:16px}
+.case-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.case{background:#fff;border-radius:24px;overflow:hidden;box-shadow:0 16px 34px rgba(22,58,95,.08)}
+.case img{width:100%;height:230px;object-fit:cover}
+.case:nth-child(2) img{clip-path:polygon(0 0,100% 0,92% 100%,0 100%)}
+.case-body{padding:26px}
+.voice-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:28px}
+.voice{background:#fff;border-radius:24px;padding:26px;box-shadow:0 16px 34px rgba(22,58,95,.08)}
+.voice img{width:86px;height:86px;object-fit:cover;border-radius:50%;margin-bottom:16px}
+.quote{font-size:17px;font-weight:800;color:var(--navy);line-height:1.7}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:22px}
+.service{background:#fff;border-radius:22px;padding:28px;text-align:center;box-shadow:0 14px 28px rgba(22,58,95,.07)}
+.steps{display:grid;grid-template-columns:repeat(5,1fr);gap:18px}
+.step{background:#fff;border-radius:24px;padding:26px 18px;text-align:center;border:1px solid rgba(22,58,95,.08);position:relative}
+.num{width:34px;height:34px;border-radius:50%;background:var(--navy);color:#fff;display:flex;align-items:center;justify-content:center;margin:0 auto 16px;font-weight:900}
+.faq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px}
+.faq{background:#fff;border-radius:20px;padding:28px;border:1px solid rgba(22,58,95,.08)}
+.faq b{display:block;color:var(--navy);margin-bottom:10px}
+.cta{background:linear-gradient(100deg,rgba(9,40,75,.96),rgba(22,58,95,.94)),url("src/profile.jpg") left center/42% auto no-repeat;color:#fff}
+.cta h2{color:#fff;text-align:left;margin-bottom:18px}
+.cta .container{display:grid;grid-template-columns:46% 54%;gap:36px;align-items:center}
+.cta-box{grid-column:2}
+.cta p{font-size:18px}
+.footer{background:var(--navy-dark);color:#fff;padding:70px 28px 24px}
+.footer-grid{max-width:1120px;margin:0 auto;display:grid;grid-template-columns:1.3fr 1fr 1fr 1fr;gap:36px}
+.footer h3{color:#fff}
+.footer a,.footer p{color:rgba(255,255,255,.78);font-size:14px}
+.copy{max-width:1120px;margin:40px auto 0;padding-top:20px;border-top:1px solid rgba(255,255,255,.15);text-align:center;color:rgba(255,255,255,.6);font-size:13px}
+.deco-left{left:0;top:10%;width:320px}.deco-right{right:-40px;top:8%;width:300px}.deco-wave{left:0;bottom:0;width:100%;height:120px;object-fit:cover;opacity:.35}
+@media(max-width:1000px){
+  .nav,.header-actions{display:none}.hero-inner{grid-template-columns:1fr}.hero-text{padding:58px 26px 28px}.hero-visual{height:420px;border-bottom-left-radius:40px}h1{font-size:42px}.cards,.stats,.case-grid,.voice-grid,.faq-grid{grid-template-columns:1fr}.service-grid{grid-template-columns:1fr 1fr}.steps{grid-template-columns:1fr 1fr}.two,.beforeafter,.cta .container,.footer-grid{grid-template-columns:1fr}.arrow{transform:rotate(90deg)}.cta{background:var(--navy-dark)}.cta-box{grid-column:auto}
+}
+@media(max-width:768px){
+  .section{padding:64px 20px}.header{height:auto}.header-inner{padding:14px 20px}.logo img{width:170px}.hero{min-height:auto}.hero-inner{min-height:auto}.hero-points{grid-template-columns:1fr}.hero-text{padding:46px 20px 26px}h1{font-size:34px}h2{font-size:28px;text-align:left;margin-bottom:28px}h3{font-size:21px}.lead{font-size:16px}.service-grid,.steps{grid-template-columns:1fr}.btn{width:100%;padding:0 20px}.footer-grid{gap:18px}
+}
+</style>
+</head>
+<body>
+<header class="header">
+  <div class="header-inner">
+    <a class="logo" href="#"><img src="src/logo.png" alt="みらい住まい不動産ロゴ"></a>
+    <nav class="nav">
+      <a href="#worries">私たちの強み</a>
+      <a href="#cases">物件情報</a>
+      <a href="#service">サービス内容</a>
+      <a href="#voice">お客様の声</a>
+      <a href="#flow">ご相談の流れ</a>
+    </nav>
+    <div class="header-actions">
+      <div class="tel"><small>お電話でのご相談はこちら</small>0120-123-456</div>
+      <a class="btn gold" href="#contact">まずは無料相談する</a>
+    </div>
+  </div>
+</header>
+
+<main>
+<section class="hero">
+  <div class="hero-inner">
+    <div class="hero-text fadeUp">
+      <p class="kicker">地域に根ざした住まいの相談窓口</p>
+      <h1>はじめての家探しも、<br>住み替えも、<br>安心して進められる。</h1>
+      <p class="lead">不安や疑問に寄り添いながら、理想の住まい探しをサポートします。</p>
+      <div class="hero-points">
+        <div class="point">地域密着<small>エリア情報に強い</small></div>
+        <div class="point">無料相談<small>何度でも相談OK</small></div>
+        <div class="point">物件情報<small>非公開物件もご紹介</small></div>
+      </div>
+      <a class="btn" href="#contact">まずは無料相談する</a>
+    </div>
+    <div class="hero-visual"><img src="src/fv.jpg" alt="明るい住宅街"></div>
+  </div>
+</section>
+
+<section id="worries" class="section">
+  <img class="deco deco-left float" src="src/deco-line-frame-1.png" alt="">
+  <div class="container">
+    <h2>こんなお悩みはありませんか？</h2>
+    <div class="cards">
+      <article class="card center"><div class="card-icon">1</div><h3>住宅ローンが不安</h3><p>いくら借りられるのか、将来の返済に無理がないのか分からない。</p></article>
+      <article class="card center"><div class="card-icon">2</div><h3>何から始めればいいか分からない</h3><p>情報が多すぎて、希望条件の決め方や見る順番で迷ってしまう。</p></article>
+      <article class="card center"><div class="card-icon">3</div><h3>住み替えの進め方が分からない</h3><p>今の家を売る時期と新しい家を買う時期をどう合わせるか不安。</p></article>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <img class="deco deco-right float" src="src/deco-line-frame-2.png" alt="">
+  <div class="container two">
+    <div>
+      <p class="kicker">PROMISE</p>
+      <h2 style="text-align:left">家探しの不安を、安心に変えます</h2>
+      <p>お客様の状況を聞いた上で、資金計画から物件探し、契約、お引き渡しまで一つずつサポートします。</p>
+      <a class="btn" href="#service">私たちの強みを見る</a>
+    </div>
+    <div class="beforeafter">
+      <div class="panel"><h3>BEFORE</h3><ul class="check"><li>何を基準に選べばいいか分からない</li><li>住宅ローンが不安</li><li>住み替えの段取りが見えない</li></ul></div>
+      <div class="arrow">→</div>
+      <div class="panel"><h3>AFTER</h3><ul class="check"><li>自分たちに合う条件が見つかる</li><li>無理のない資金計画で進める</li><li>納得して新生活を始められる</li></ul></div>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <h2>地域に根ざしたサポート実績</h2>
+    <div class="stats">
+      <div class="stat"><img src="src/badge-1.png" alt="相談実績2300件以上"></div>
+      <div class="stat"><img src="src/badge-2.png" alt="地域密着15年"></div>
+      <div class="stat"><img src="src/badge-3.png" alt="お客様満足度98パーセント"></div>
+    </div>
+  </div>
+</section>
+
+<section id="cases" class="section soft">
+  <div class="container">
+    <h2>ご成約事例</h2>
+    <div class="case-grid">
+      <article class="case"><img src="src/case-1.jpg" alt="新築一戸建て"><div class="case-body"><h3>新築一戸建てをご購入</h3><p>30代前半の共働きご夫婦。通勤と子育て環境を両立できる住まいをご提案しました。</p></div></article>
+      <article class="case"><img src="src/case-2.jpg" alt="中古マンション"><div class="case-body"><h3>中古マンションをご購入</h3><p>駅近で学校や公園にも近い住環境を重視。資金計画から一緒に確認しました。</p></div></article>
+      <article class="case"><img src="src/case-3.jpg" alt="住み替え成約"><div class="case-body"><h3>住み替えでご成約</h3><p>子どもの進学に合わせて広い家へ。売却と購入の流れを整理しました。</p></div></article>
+    </div>
+  </div>
+</section>
+
+<section id="voice" class="section">
+  <div class="container">
+    <h2>お客様からいただいた声</h2>
+    <div class="voice-grid">
+      <article class="voice"><img src="src/voice-1.jpg" alt="お客様の声1"><p class="quote">何から始めていいか分からず不安でしたが、丁寧にサポートしてもらえて安心できました。</p><p>30代・ご夫婦</p></article>
+      <article class="voice"><img src="src/voice-2.jpg" alt="お客様の声2"><p class="quote">売却と購入のタイミングが心配でしたが、スムーズに住み替えができました。</p><p>40代・ご家族</p></article>
+      <article class="voice"><img src="src/voice-3.jpg" alt="お客様の声3"><p class="quote">ローンが通るか不安でしたが、資金計画から相談できて心強かったです。</p><p>30代・ご夫婦</p></article>
+    </div>
+  </div>
+</section>
+
+<section id="service" class="section soft">
+  <div class="container">
+    <h2>ご相談からご契約までサポート</h2>
+    <div class="service-grid">
+      <div class="service"><h3>物件探し</h3><p>条件やエリアから、無理のない候補を整理します。</p></div>
+      <div class="service"><h3>資金計画</h3><p>住宅ローンと毎月の支払いを一緒に確認します。</p></div>
+      <div class="service"><h3>売却サポート</h3><p>住み替えの場合も、売却と購入の流れを整理します。</p></div>
+      <div class="service"><h3>契約・引き渡し</h3><p>契約手続きから引き渡しまで伴走します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="flow" class="section">
+  <div class="container">
+    <h2>ご相談からご入居までの流れ</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><h3>ご相談</h3><p>まずは状況を聞かせてください。</p></div>
+      <div class="step"><div class="num">2</div><h3>資金計画</h3><p>無理のない予算を整理します。</p></div>
+      <div class="step"><div class="num">3</div><h3>物件提案</h3><p>条件に合う候補をご紹介します。</p></div>
+      <div class="step"><div class="num">4</div><h3>申し込み</h3><p>気に入った物件を進めます。</p></div>
+      <div class="step"><div class="num">5</div><h3>引き渡し</h3><p>新生活の開始まで支えます。</p></div>
+    </div>
+  </div>
+</section>
+
+<section class="section soft">
+  <div class="container">
+    <h2>よくいただくご質問</h2>
+    <div class="faq-grid">
+      <div class="faq"><b>まだ購入を決めていません。相談だけでも大丈夫ですか？</b><p>はい。まずは状況整理からで大丈夫です。</p></div>
+      <div class="faq"><b>住宅ローンが通るか不安です。</b><p>収入や支出をもとに、無理のない資金計画を一緒に確認します。</p></div>
+      <div class="faq"><b>他社で見た物件も相談できますか？</b><p>可能です。気になる物件があれば一緒に確認します。</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="section cta">
+  <div class="container">
+    <div></div>
+    <div class="cta-box">
+      <h2>理想の住まい探しを、一緒に始めませんか？</h2>
+      <p>無理な営業は一切しません。まずはお話をお聞かせください。</p>
+      <a class="btn gold" href="mailto:info@mirai-sumai.co.jp">まずは無料相談する</a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="footer-grid">
+    <div><h3>みらい住まい不動産</h3><p>地域に根ざした住まいの相談窓口</p><p>〒231-0011<br>神奈川県横浜市中区太田町1-2-3<br>TEL：0120-123-456<br>営業時間：9:00〜18:00<br>定休日：水曜日</p></div>
+    <div><h3>会社情報</h3><p>会社概要</p><p>スタッフ紹介</p><p>アクセス</p></div>
+    <div><h3>サービス</h3><p>物件を探す</p><p>売りたい方へ</p><p>住み替え相談</p></div>
+    <div><h3>対応エリア</h3><p>横浜市・川崎市・鎌倉市<br>その他周辺エリア</p><p>MAIL：info@mirai-sumai.co.jp</p></div>
+  </div>
+  <div class="copy">© 2026 Mirai Sumai Real Estate Co., Ltd.</div>
+</footer>
+</body>
+</html>
